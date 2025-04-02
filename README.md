@@ -12,7 +12,7 @@ Containers offer several advantages in an HPC and AI environment:
 - **Reproducibility**: Ensure experiments and workloads run identically across different job submissions.
 - **Scalability**: Leverage CycleCloud and Slurm to scale containerized workloads dynamically across multiple nodes and GPUs.
 
-## Testing Scenario
+## Enviornment 
 Before running multi-node, multi-GPU NCCL jobs with containers in CycleCloud-Slurm, ensure the following:
 - CycleCloud 8.x should be configured and running.
 - Use **Standard_ND96asr_v4** VMs with NVIDIA GPUs and InfiniBand network.
