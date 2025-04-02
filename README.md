@@ -17,7 +17,7 @@ Before running multi-node, multi-GPU NCCL jobs with containers in CycleCloud-Slu
 - CycleCloud 8.x should be configured and running.
 - Use **Standard_ND96asr_v4** VMs with NVIDIA GPUs and InfiniBand network.
 - Slurm version **24.05.4-2** (cyclecloud-slurm **3.0.11**).
-- Ubuntu **22.04** OS (**microsoft-dsvm:ubuntu-hpc:2204:latest** image containing GPU drivers, InfiniBand support, and essential HPC tools).
+- Supported OS - Ubuntu **22.04**  (**microsoft-dsvm:ubuntu-hpc:2204:latest** image containing GPU drivers, InfiniBand support, and essential HPC tools).
 - **cyclecloud-slurm-container** project configured for Enroot and Pyxis.
 - **Azure NHC Container** (Node Health Check Container) for running NCCL benchmarks.
 
@@ -34,7 +34,7 @@ cd cyclecloud-slurm-container/
 cyclecloud project upload <locker-name>
 ```
 
-### 3. Configure the Project
+### 3. Project structure
 The project sets up Pyxis and Enroot for running container workloads in Slurm. It includes configuration scripts for both the scheduler and compute nodes.
 
 Verify directory structure:
